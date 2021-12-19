@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'roundsblack';
-  src: local('roundsblack'), url(fonts/roundsblack/RoundsBlack.otf) format('opentype');
+  src: local('roundsblack'), url(fonts/roundsblack/RoundsBlack.ttf) format('truetype');
 }
 
 @font-face {
