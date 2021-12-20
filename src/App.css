@@ -83,12 +83,13 @@
   border-radius: 99px;
   width: 100px;
   padding: 8px;
+  justify-content: center;
+  align-self: center;
   background-color: #67170E;
 }
 
 .whitepaper-btn-mobile {
   width: 100%;
-  height: 30px;
   margin-bottom: 5px;
   margin-top: 5px;
   font-size: 10px;
@@ -101,6 +102,11 @@
   align-self: center;
   width: 85%;
   margin-bottom: 200px;
+}
+
+.main-container-mobile {
+  margin-bottom: 50px;
+  width: 95%;
 }
 
 .main-content-wrapper {
@@ -155,6 +161,11 @@
   line-height: 115%;
 }
 
+.welcome-container-mobile {
+  margin-bottom: 50px;
+  width: 95%;
+}
+
 .welcome-text-wrapper {
   display: flex;
   flex-direction: column;
@@ -197,16 +208,31 @@
   margin-bottom: 200px;
 }
 
+.features-container-mobile {
+  width: 95%;
+  margin-bottom: 50px;
+}
+
 .ecosystem-container {
   width: 85%;
   align-self: center;
   margin-bottom: 200px;
 }
 
+.ecosystem-container-mobile {
+  width: 95%;
+  margin-bottom: 50px;
+}
+
 .roadmap-container {
   width: 85%;
   align-self: center;
   margin-bottom: 200px;
+}
+
+.roadmap-container-mobile {
+  width: 95%;
+  margin-bottom: 50px;
 }
 
 .community {

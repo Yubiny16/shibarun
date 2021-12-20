@@ -36,56 +36,74 @@ function App() {
         </Link>
         {width > 1024 ?
           <div className="header-links">
+            <Link className="header-item" activeClass="active" to="welcome" spy={true} smooth={true} offset={-100}duration={500}>Welcome</Link>
             <Link className="header-item" activeClass="active" to="features" spy={true} smooth={true} offset={-100}duration={500}>Features</Link>
             <Link className="header-item" activeClass="active" to="ecosystem" spy={true} smooth={true} offset={-100} duration={500} >Ecosystem</Link>
             <Link className="header-item" activeClass="active" to="roadmap" spy={true} smooth={true} offset={-100} duration={500}>Roadmap</Link>
             <img className="header-item header-social-btn" src={DiscordLogo} alt="Discord Btn" />
             <img className="header-item header-social-btn" src={TwitterLogo} alt="Twitter Btn" />
-            <button className="header-item whitepaper-btn" href="https://yubiny16.gitbook.io/shiba-run-whitepaper/">Whitepaper</button>
+            <a className="header-item whitepaper-btn" href="https://yubiny16.gitbook.io/shiba-run-whitepaper/">Whitepaper</a>
           </div> :
           <div className="header-links">
             <img className="header-item header-item-mobile header-social-btn" src={DiscordLogo} alt="Discord Btn" />
             <img className="header-item header-item-mobile header-social-btn" src={TwitterLogo} alt="Twitter Btn" />
-            <button className="whitepaper-btn header-item header-item-mobile  whitepaper-btn-mobile" href="https://yubiny16.gitbook.io/shiba-run-whitepaper/">Whitepaper</button>
+            <a className="whitepaper-btn header-item header-item-mobile  whitepaper-btn-mobile" href="https://yubiny16.gitbook.io/shiba-run-whitepaper/">Whitepaper</a>
           </div>
         }
       </div>
-      <div id="main" className="main-container">
+      {width > 1024 ? 
+      <div id="main" className="main-container main-container">
         <div className="main-content-wrapper main-text-wrapper">
           <div className="main-logo-wrapper">
             <img src={LargeLogo} alt="Shiba Run Logo" />
           </div>
-            {width > 1024 ? 
-              <div className="main-description">
-                <p className="main-paragraph">Shibarun is a digital dog racing P2E game where anyone can own, race, and breed NFT Shibas!</p>
-                <button className="primary-btn">MINT SOON!</button>
-              </div> :
-              <div className="main-description main-description-mobile">
-                <p className="main-paragraph main-paragraph-mobile">Shibarun is a digital dog racing P2E game where anyone can own, race, and breed NFT Shibas!</p>
-                <button className="primary-btn primary-btn-mobile">MINT SOON!</button>
-              </div>
-            }
+          <div className="main-description">
+            <p className="main-paragraph">Shibarun is a digital dog racing P2E game where anyone can own, race, and breed NFT Shibas!</p>
+            <button className="primary-btn">MINT SOON!</button>
+          </div>
+        </div>
+        <div className="main-content-wrapper">
+          <img src={ShibaTrio} alt="Image of three shibas" />
+        </div>
+      </div> : 
+      <div id="main" className="main-container main-container-mobile">
+        <div className="main-content-wrapper main-text-wrapper">
+          <div className="main-logo-wrapper">
+            <img src={LargeLogo} alt="Shiba Run Logo" />
+          </div>
+          <div className="main-description main-description-mobile">
+            <p className="main-paragraph main-paragraph-mobile">Shibarun is a digital dog racing P2E game where anyone can own, race, and breed NFT Shibas!</p>
+            <button className="primary-btn primary-btn-mobile">MINT SOON!</button>
+          </div>
         </div>
         <div className="main-content-wrapper">
           <img src={ShibaTrio} alt="Image of three shibas" />
         </div>
       </div>
-      <div id="welcome" className="welcome-container">
-        <div className="welcome-content-wrapper">
-          <img src={ShibaTrio} alt="Image of three shibas" />
-        </div>
-        <div className="welcome-content-wrapper welcome-text-wrapper">
-          {width > 1024 ? 
-            <div className="welcome-descriptions">
-              <h2 className="welcome-section-title">WELCOME!</h2>
-              <p className="welcome-paragraph">
-                Shibarun is a play to earn (P2E)
-                tokens based on their game play
-                tokens based on their was she all
-                their meme-inspired non-fungible
-                token (NFT) Shibas.
-              </p> 
-            </div>:
+      }
+      {width > 1024 ? 
+        <div id="welcome" className="welcome-container">
+          <div className="welcome-content-wrapper">
+            <img src={ShibaTrio} alt="Image of three shibas" />
+          </div>
+          <div className="welcome-content-wrapper welcome-text-wrapper">
+              <div className="welcome-descriptions">
+                <h2 className="welcome-section-title">WELCOME!</h2>
+                <p className="welcome-paragraph">
+                  Shibarun is a play to earn (P2E)
+                  tokens based on their game play
+                  tokens based on their was she all
+                  their meme-inspired non-fungible
+                  token (NFT) Shibas.
+                </p> 
+              </div>
+          </div>
+        </div> : 
+        <div id="welcome" className="welcome-container welcome-container-mobile">
+          <div className="welcome-content-wrapper">
+            <img src={ShibaTrio} alt="Image of three shibas" />
+          </div>
+          <div className="welcome-content-wrapper welcome-text-wrapper">
             <div className="welcome-descriptions">
               <h2 className="welcome-section-title welcome-section-title-mobile">WELCOME!</h2>
               <p className="welcome-paragraph welcome-paragraph-mobile">
@@ -96,21 +114,33 @@ function App() {
                 token (NFT) Shibas.
               </p> 
             </div>
-          }
+          </div>
         </div>
-      </div>
-      <div id="features" className="features-container">
-        <img src={FeaturesDiagram} alt="Features Diagram" />
-        {/* <FeaturesDiagram id="features" /> */}
-      </div>
-      <div id="ecosystem" className="ecosystem-container">
-        <img src={EcosystemDiagram} alt="Features Diagram" />
-        {/* <EcosystemDiagram id="ecosystem" /> */}
-      </div>
-      <div id="roadmap" className="roadmap-container">
-        <img src={RoadmapDiagram} alt="Features Diagram" />
-        {/* <RoadmapDiagram id="roadmap" /> */}
-      </div>
+      }
+      {width > 1024 ? 
+        <div id="features" className="features-container">
+          <img src={FeaturesDiagram} alt="Features Diagram" />
+        </div> :
+        <div id="features" className="features-container features-container-mobile">
+          <img src={FeaturesDiagram} alt="Features Diagram" />
+        </div>
+      }
+      {width > 1024 ? 
+        <div id="ecosystem" className="ecosystem-container">
+          <img src={EcosystemDiagram} alt="Ecosystem Diagram" />
+        </div> :
+        <div id="ecosystem" className="ecosystem-container ecosystem-container-mobile">
+          <img src={EcosystemDiagram} alt="Ecosystem Diagram" />
+        </div>
+      }
+      {width > 1024 ? 
+        <div id="roadmap" className="roadmap-container">
+          <img src={RoadmapDiagram} alt="Features Diagram" />
+        </div> :
+        <div id="roadmap" className="roadmap-container roadmap-container-mobile">
+          <img src={RoadmapDiagram} alt="Features Diagram" />
+        </div>
+      }
       <div id="community" className="community">
         <div className="community-logo-wrapper">
           <img src={LargeLogo} alt="Shiba Run Logo" />
