@@ -8,11 +8,20 @@
   src: local('montserrat'), url(fonts/montserrat/Montserrat-SemiBold.ttf) format('truetype');
 }
 
+@keyframes slide {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(-3840px); /* The image width */
+  }
+}
+
 .primary-btn {
   width: 50%;
   height: 25%;
   border-radius: 50px;
-  background-color: #67170E;
+  background-color: #7a3a33;
   border-width: 0;
   color: white;
   font-family: roundsblack;
@@ -39,11 +48,11 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: #67170E;
+  background-color: #7a3a33;
   margin-bottom: 40px;
   position: sticky;
   top: 0;
-  /* border-width: 3px;
+  /* border-width: 3px;7a3a33
   border-color: #67170E;
   border-style: dashed; */
 }
@@ -51,6 +60,7 @@
 .header-logo {
   width: 20%;
   margin-left: 30px;
+  margin-top: 10px;
 }
 
 .header-links {
@@ -85,7 +95,7 @@
   padding: 8px;
   justify-content: center;
   align-self: center;
-  background-color: #67170E;
+  background-color: #7a3a33;
 }
 
 .whitepaper-btn-mobile {
@@ -110,6 +120,10 @@
 }
 
 .main-content-wrapper {
+  width: 50%;
+}
+
+.main-content-image {
   width: 50%;
 }
 
@@ -156,31 +170,41 @@
   flex-direction: row;
   justify-content: space-between;
   align-self: center;
-  width: 85%;
+  width: 100%;
   margin-bottom: 200px;
   line-height: 115%;
 }
 
-.welcome-container-mobile {
-  margin-bottom: 50px;
-  width: 95%;
+.welcome-scrolling-image-container {
+  overflow: hidden;
 }
 
-.welcome-text-wrapper {
+.welcome-scrolling-image {
+  background: url("./res/shibas/shiba_scroll.svg") repeat-x;
+  width: 100%;
+  height: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-left: 20px;
+  justify-content: space-around;
+  /* animation: slide 3s linear infinite; */
 }
 
 .welcome-content-wrapper {
-  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.welcome-image-wrapper {
+  width: 40%;
+  margin-left: 50px;
 }
 
 .welcome-descriptions {
-  width: 80%;
-  color: #67170E;
+  width: 40%;
+  color: white;
+  margin-right: 50px;
+  margin-left: 50px;
 }
 
 .welcome-section-title {
@@ -235,8 +259,19 @@
   margin-bottom: 50px;
 }
 
+.team-container {
+  width: 85%;
+  align-self: center;
+  margin-bottom: 200px;
+}
+
+.team-container-mobile {
+  width: 95%;
+  margin-bottom: 50px;
+}
+
 .community {
-  background-color: #67170E;
+  background-color: #7a3a33;
   padding: 50px 0px;
   display: flex;
   flex-direction: column;

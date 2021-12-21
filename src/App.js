@@ -7,9 +7,15 @@ import { Link } from "react-scroll";
 import EcosystemDiagram from './res/ecosystem_diagram.svg';
 import RoadmapDiagram from './res/roadmap_diagram.svg';
 import FeaturesDiagram from './res/features_diagram.svg';
+import TeamDiagram from './res/team_diagram.svg';
+
+import ShibaLookingUp from './res/shibas/shiba_looking_up.png';
+import ShibaScroll from './res/shibas/shiba_scroll.svg';
+
 import ShibaTrio from './res/shiba_trio.png';
 import LargeLogo from './res/logo_large.png';
 import SmallLogo from './res/logo_small.png';
+
 import DiscordLogo from './res/discord_logo.png';
 import TwitterLogo from './res/twitter_logo.png';
 
@@ -32,7 +38,7 @@ function App() {
     <div className="app">
       <div className="header">
         <Link className="header-logo" activeClass="active" to="main" spy={true} smooth={true}
-          offset={-100} duration={500}><img src={SmallLogo} alt="Shiba Run Logo"/>
+          offset={-100} duration={500}><img src={LargeLogo} alt="Shiba Run Logo"/>
         </Link>
         {width > 1024 ?
           <div className="header-links">
@@ -40,6 +46,7 @@ function App() {
             <Link className="header-item" activeClass="active" to="features" spy={true} smooth={true} offset={-100}duration={500}>Features</Link>
             <Link className="header-item" activeClass="active" to="ecosystem" spy={true} smooth={true} offset={-100} duration={500} >Ecosystem</Link>
             <Link className="header-item" activeClass="active" to="roadmap" spy={true} smooth={true} offset={-100} duration={500}>Roadmap</Link>
+            <Link className="header-item" activeClass="active" to="team" spy={true} smooth={true} offset={-100} duration={500}>Team</Link>
             <img className="header-item header-social-btn" src={DiscordLogo} alt="Discord Btn" />
             <img className="header-item header-social-btn" src={TwitterLogo} alt="Twitter Btn" />
             <a className="header-item whitepaper-btn" href="https://yubiny16.gitbook.io/shiba-run-whitepaper/">Whitepaper</a>
@@ -83,20 +90,20 @@ function App() {
       }
       {width > 1024 ? 
         <div id="welcome" className="welcome-container">
-          <div className="welcome-content-wrapper">
-            <img src={ShibaTrio} alt="Image of three shibas" />
-          </div>
-          <div className="welcome-content-wrapper welcome-text-wrapper">
-              <div className="welcome-descriptions">
-                <h2 className="welcome-section-title">WELCOME!</h2>
-                <p className="welcome-paragraph">
-                  Shibarun is a play to earn (P2E)
-                  tokens based on their game play
-                  tokens based on their was she all
-                  their meme-inspired non-fungible
-                  token (NFT) Shibas.
-                </p> 
-              </div>
+          <div class="welcome-scrolling-image welcome-content-wrapper">
+            <div className="welcome-image-wrapper">
+              <img src={ShibaTrio} alt="Image of three shibas" />
+            </div>
+            <div className="welcome-descriptions">
+              <h2 className="welcome-section-title">WELCOME!</h2>
+              <p className="welcome-paragraph">
+                Shibarun is a play to earn (P2E)
+                tokens based on their game play
+                tokens based on their was she all
+                their meme-inspired non-fungible
+                token (NFT) Shibas.
+              </p> 
+            </div>
           </div>
         </div> : 
         <div id="welcome" className="welcome-container welcome-container-mobile">
@@ -139,6 +146,14 @@ function App() {
         </div> :
         <div id="roadmap" className="roadmap-container roadmap-container-mobile">
           <img src={RoadmapDiagram} alt="Features Diagram" />
+        </div>
+      }
+      {width > 1024 ? 
+        <div id="team" className="team-container">
+          <img src={TeamDiagram} alt="Features Diagram" />
+        </div> :
+        <div id="team" className="team-container team-container-mobile">
+          <img src={TeamDiagram} alt="Team Diagram" />
         </div>
       }
       <div id="community" className="community">
