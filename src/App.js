@@ -68,7 +68,7 @@ function App() {
             <div className="welcome-descriptions">
               <h2 className="welcome-section-title">WELCOME!</h2>
               <p className="welcome-paragraph">
-                Shiba Run is a play-to-earn (P2E) dog racing game where players earn $Bark tokens based on their game play. Players compete in shiba races with their meme-inspired NFT Shibas!
+              Shiba Run is a P2E digital dog racing game where players own, race, and breed NFT Shibas!
               </p> 
               <button className="primary-btn">MINT SOON!</button>
               <div className="welcome-solana"><img src={Solana} /></div>
@@ -84,7 +84,7 @@ function App() {
             <div className="welcome-descriptions">
               <h2 className="welcome-section-title welcome-section-title-mobile">WELCOME!</h2>
               <p className="welcome-paragraph welcome-paragraph-mobile">
-                Shiba Run is a play-to-earn (P2E) dog racing game where players earn $Bark tokens based on their game play. Players compete in shiba races with their meme-inspired NFT Shibas!
+                Shiba Run is a P2E digital dog racing game where players own, race, and breed NFT Shibas!
               </p> 
               <button className="primary-btn primary-btn-mobile">MINT SOON!</button>
               <div className="welcome-solana"><img src={Solana} /></div>
@@ -99,7 +99,7 @@ function App() {
             <h2 className="about-section-title">About</h2>
           </div>
           <div className="main-description">
-            <p className="main-paragraph">Shiba Run is a P2E digital dog racing game where players own, race, and breed NFT Shibas!</p>
+            <p className="main-paragraph">Shiba Run is a play-to-earn (P2E) dog racing game where players earn $Bark tokens based on their game play. Players compete in shiba races with their meme-inspired NFT Shibas!</p>
             {/* <button className="primary-btn">MINT SOON!</button> */}
           </div>
         </div>
@@ -113,7 +113,7 @@ function App() {
           <h2 className="about-section-title about-section-title-mobile">About</h2>
           </div>
           <div className="main-description main-description-mobile">
-            <p className="main-paragraph main-paragraph-mobile">Shiba Run is a P2E digital dog racing game where players own, race, and breed NFT Shibas!</p>
+            <p className="main-paragraph main-paragraph-mobile">Shiba Run is a play-to-earn (P2E) dog racing game where players earn $Bark tokens based on their game play. Players compete in shiba races with their meme-inspired NFT Shibas!</p>
             {/* <button className="primary-btn primary-btn-mobile">MINT SOON!</button> */}
           </div>
         </div>
