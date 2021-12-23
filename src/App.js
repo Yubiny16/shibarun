@@ -10,11 +10,10 @@ import FeaturesDiagram from './res/features_diagram.svg';
 import TeamDiagram from './res/team_diagram.svg';
 
 import ShibaLookingUp from './res/shibas/shiba_looking_up.png';
-import ShibaScroll from './res/shibas/shiba_scroll.svg';
 
+import Test from './res/shibas/test.svg';
 import ShibaTrio from './res/shiba_trio.png';
 import LargeLogo from './res/logo_large.png';
-import SmallLogo from './res/logo_small.png';
 
 import DiscordLogo from './res/discord_logo.png';
 import TwitterLogo from './res/twitter_logo.png';
@@ -47,8 +46,8 @@ function App() {
             <Link className="header-item" activeClass="active" to="ecosystem" spy={true} smooth={true} offset={-100} duration={500} >Ecosystem</Link>
             <Link className="header-item" activeClass="active" to="roadmap" spy={true} smooth={true} offset={-100} duration={500}>Roadmap</Link>
             <Link className="header-item" activeClass="active" to="team" spy={true} smooth={true} offset={-100} duration={500}>Team</Link>
-            <img className="header-item header-social-btn" src={DiscordLogo} alt="Discord Btn" />
-            <img className="header-item header-social-btn" src={TwitterLogo} alt="Twitter Btn" />
+            <a href="https://discord.gg/shibarun"><img className="header-item header-social-btn" src={DiscordLogo} alt="Discord Btn" /></a>
+            <a href="https://twitter.com/ShibaRunProject"><img className="header-item header-social-btn" src={TwitterLogo} alt="Twitter Btn" /></a>
             <a className="header-item whitepaper-btn" href="https://yubiny16.gitbook.io/shiba-run-whitepaper/">Whitepaper</a>
           </div> :
           <div className="header-links">
@@ -65,12 +64,12 @@ function App() {
             <img src={LargeLogo} alt="Shiba Run Logo" />
           </div>
           <div className="main-description">
-            <p className="main-paragraph">Shibarun is a digital dog racing P2E game where anyone can own, race, and breed NFT Shibas!</p>
+            <p className="main-paragraph">Shiba Run is a P2E digital dog racing game where players own, race, and breed NFT Shibas!</p>
             <button className="primary-btn">MINT SOON!</button>
           </div>
         </div>
         <div className="main-content-wrapper">
-          <img src={ShibaTrio} alt="Image of three shibas" />
+          <img src={Test} alt="Image of three shibas" />
         </div>
       </div> : 
       <div id="main" className="main-container main-container-mobile">
@@ -79,46 +78,40 @@ function App() {
             <img src={LargeLogo} alt="Shiba Run Logo" />
           </div>
           <div className="main-description main-description-mobile">
-            <p className="main-paragraph main-paragraph-mobile">Shibarun is a digital dog racing P2E game where anyone can own, race, and breed NFT Shibas!</p>
+            <p className="main-paragraph main-paragraph-mobile">Shiba Run is a P2E digital dog racing game where players own, race, and breed NFT Shibas!</p>
             <button className="primary-btn primary-btn-mobile">MINT SOON!</button>
           </div>
         </div>
         <div className="main-content-wrapper">
-          <img src={ShibaTrio} alt="Image of three shibas" />
+          <img src={Test} alt="Image of three shibas" />
         </div>
       </div>
       }
       {width > 1024 ? 
-        <div id="welcome" className="welcome-container">
-          <div class="welcome-scrolling-image welcome-content-wrapper">
+        <div id="welcome" className="welcome-container welcome-scrolling-image-container">
+          <div className="welcome-scrolling-image"></div>
+          <div className="welcome-content-wrapper">
             <div className="welcome-image-wrapper">
               <img src={ShibaTrio} alt="Image of three shibas" />
             </div>
             <div className="welcome-descriptions">
               <h2 className="welcome-section-title">WELCOME!</h2>
               <p className="welcome-paragraph">
-                Shibarun is a play to earn (P2E)
-                tokens based on their game play
-                tokens based on their was she all
-                their meme-inspired non-fungible
-                token (NFT) Shibas.
+                Shiba Run is a play-to-earn (P2E) dog racing game where players earn $Bark tokens based on their game play. Players compete in shiba races with their meme-inspired NFT Shibas!
               </p> 
-            </div>
-          </div>
+            </div> 
+          </div>  
         </div> : 
-        <div id="welcome" className="welcome-container welcome-container-mobile">
+        <div id="welcome" className="welcome-container welcome-scrolling-image-container">
+          <div className="welcome-scrolling-image welcome-scrolling-image-mobile"></div>
           <div className="welcome-content-wrapper">
-            <img src={ShibaTrio} alt="Image of three shibas" />
-          </div>
-          <div className="welcome-content-wrapper welcome-text-wrapper">
+            <div  className="welcome-image-wrapper ">
+              <img src={ShibaTrio} alt="Image of three shibas" />
+            </div>
             <div className="welcome-descriptions">
               <h2 className="welcome-section-title welcome-section-title-mobile">WELCOME!</h2>
               <p className="welcome-paragraph welcome-paragraph-mobile">
-                Shibarun is a play to earn (P2E)
-                tokens based on their game play
-                tokens based on their was she all
-                their meme-inspired non-fungible
-                token (NFT) Shibas.
+                Shiba Run is a play-to-earn (P2E) dog racing game where players earn $Bark tokens based on their game play. Players compete in shiba races with their meme-inspired NFT Shibas!
               </p> 
             </div>
           </div>
