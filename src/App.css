@@ -175,6 +175,8 @@
   width: 100%;
   margin-bottom: 200px;
   line-height: 115%;
+
+  
 }
 
 .welcome-scrolling-image-container {
@@ -185,9 +187,9 @@
 
 .welcome-scrolling-image {
   position: absolute;
-  top: 90px;
+  top: 50px;
   width: 200%;
-  height: 65%;
+  height: 100%;
   z-index: 3;
   
   background: url("./res/shibas/shiba_slide_show.svg") repeat-x;
@@ -222,7 +224,7 @@
 
 .welcome-section-title {
   font-family: roundsblack;
-  font-size: 70px;
+  font-size: 50px;
   color: white;
   margin-bottom: 50px;
 }
@@ -251,11 +253,17 @@
 .welcome-paragraph {
   font-family: montserrat;
   font-size: 24px;
-  line-height: 170%;
+  line-height: 160%;
 }
 
 .welcome-paragraph-mobile {
   font-size: 8px;
+}
+
+.welcome-solana {
+  width: 40%;
+  height: 40%;
+  margin-top: 10px;
 }
 
 .features-container {

@@ -11,7 +11,8 @@ import TeamDiagram from './res/team_diagram.svg';
 
 import ShibaLookingUp from './res/shibas/shiba_looking_up.png';
 
-import Test from './res/shibas/test.svg';
+import Solana from './res/solana.png';
+import Shibas from './res/shibas/test.svg';
 import ShibaTrio from './res/shiba_trio.png';
 import LargeLogo from './res/logo_large.png';
 
@@ -70,6 +71,7 @@ function App() {
                 Shiba Run is a play-to-earn (P2E) dog racing game where players earn $Bark tokens based on their game play. Players compete in shiba races with their meme-inspired NFT Shibas!
               </p> 
               <button className="primary-btn">MINT SOON!</button>
+              <div className="welcome-solana"><img src={Solana} /></div>
             </div> 
           </div>  
         </div> : 
@@ -85,6 +87,7 @@ function App() {
                 Shiba Run is a play-to-earn (P2E) dog racing game where players earn $Bark tokens based on their game play. Players compete in shiba races with their meme-inspired NFT Shibas!
               </p> 
               <button className="primary-btn primary-btn-mobile">MINT SOON!</button>
+              <div className="welcome-solana"><img src={Solana} /></div>
             </div>
           </div>
         </div>
@@ -101,7 +104,7 @@ function App() {
           </div>
         </div>
         <div className="main-content-wrapper">
-          <img src={Test} alt="Image of three shibas" />
+          <img src={Shibas} alt="Image of three shibas" />
         </div>
       </div> : 
       <div id="main" className="main-container main-container-mobile">
@@ -115,7 +118,7 @@ function App() {
           </div>
         </div>
         <div className="main-content-wrapper">
-          <img src={Test} alt="Image of three shibas" />
+          <img src={Shibas} alt="Image of three shibas" />
         </div>
       </div>
       }
