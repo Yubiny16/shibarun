@@ -18,8 +18,8 @@
 }
 
 .primary-btn {
-  width: 50%;
-  height: 25%;
+  width: 40%;
+  height: 40px;
   border-radius: 50px;
   background-color: #7a3a33;
   border-width: 0;
@@ -140,7 +140,6 @@
 
 .main-logo-wrapper {
   width: 80%;
-  margin-right: 22px;
 }
 
 .main-description {
@@ -224,10 +223,29 @@
 .welcome-section-title {
   font-family: roundsblack;
   font-size: 70px;
+  color: white;
+  margin-bottom: 50px;
 }
 
 .welcome-section-title-mobile {
+  margin-top: 0px;
+  margin-bottom: 20px;
   font-size: 20px;
+  color: white;
+}
+
+.about-section-title {
+  font-family: roundsblack;
+  font-size: 70px;
+  color: #67170E;
+  margin-bottom: 10px;
+}
+
+.about-section-title-mobile {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #67170E;
 }
 
 .welcome-paragraph {

@@ -41,7 +41,7 @@ function App() {
         </Link>
         {width > 1024 ?
           <div className="header-links">
-            <Link className="header-item" activeClass="active" to="welcome" spy={true} smooth={true} offset={-100}duration={500}>Welcome</Link>
+            <Link className="header-item" activeClass="active" to="about" spy={true} smooth={true} offset={-100}duration={500}>About</Link>
             <Link className="header-item" activeClass="active" to="features" spy={true} smooth={true} offset={-100}duration={500}>Features</Link>
             <Link className="header-item" activeClass="active" to="ecosystem" spy={true} smooth={true} offset={-100} duration={500} >Ecosystem</Link>
             <Link className="header-item" activeClass="active" to="roadmap" spy={true} smooth={true} offset={-100} duration={500}>Roadmap</Link>
@@ -58,36 +58,6 @@ function App() {
         }
       </div>
       {width > 1024 ? 
-      <div id="main" className="main-container main-container">
-        <div className="main-content-wrapper main-text-wrapper">
-          <div className="main-logo-wrapper">
-            <img src={LargeLogo} alt="Shiba Run Logo" />
-          </div>
-          <div className="main-description">
-            <p className="main-paragraph">Shiba Run is a P2E digital dog racing game where players own, race, and breed NFT Shibas!</p>
-            <button className="primary-btn">MINT SOON!</button>
-          </div>
-        </div>
-        <div className="main-content-wrapper">
-          <img src={Test} alt="Image of three shibas" />
-        </div>
-      </div> : 
-      <div id="main" className="main-container main-container-mobile">
-        <div className="main-content-wrapper main-text-wrapper">
-          <div className="main-logo-wrapper">
-            <img src={LargeLogo} alt="Shiba Run Logo" />
-          </div>
-          <div className="main-description main-description-mobile">
-            <p className="main-paragraph main-paragraph-mobile">Shiba Run is a P2E digital dog racing game where players own, race, and breed NFT Shibas!</p>
-            <button className="primary-btn primary-btn-mobile">MINT SOON!</button>
-          </div>
-        </div>
-        <div className="main-content-wrapper">
-          <img src={Test} alt="Image of three shibas" />
-        </div>
-      </div>
-      }
-      {width > 1024 ? 
         <div id="welcome" className="welcome-container welcome-scrolling-image-container">
           <div className="welcome-scrolling-image"></div>
           <div className="welcome-content-wrapper">
@@ -99,6 +69,7 @@ function App() {
               <p className="welcome-paragraph">
                 Shiba Run is a play-to-earn (P2E) dog racing game where players earn $Bark tokens based on their game play. Players compete in shiba races with their meme-inspired NFT Shibas!
               </p> 
+              <button className="primary-btn">MINT SOON!</button>
             </div> 
           </div>  
         </div> : 
@@ -113,9 +84,40 @@ function App() {
               <p className="welcome-paragraph welcome-paragraph-mobile">
                 Shiba Run is a play-to-earn (P2E) dog racing game where players earn $Bark tokens based on their game play. Players compete in shiba races with their meme-inspired NFT Shibas!
               </p> 
+              <button className="primary-btn primary-btn-mobile">MINT SOON!</button>
             </div>
           </div>
         </div>
+      }
+      {width > 1024 ? 
+      <div id="about" className="main-container main-container">
+        <div className="main-content-wrapper main-text-wrapper">
+          <div className="main-logo-wrapper">
+            <h2 className="about-section-title">About</h2>
+          </div>
+          <div className="main-description">
+            <p className="main-paragraph">Shiba Run is a P2E digital dog racing game where players own, race, and breed NFT Shibas!</p>
+            {/* <button className="primary-btn">MINT SOON!</button> */}
+          </div>
+        </div>
+        <div className="main-content-wrapper">
+          <img src={Test} alt="Image of three shibas" />
+        </div>
+      </div> : 
+      <div id="main" className="main-container main-container-mobile">
+        <div className="main-content-wrapper main-text-wrapper">
+          <div className="main-logo-wrapper">
+          <h2 className="about-section-title about-section-title-mobile">About</h2>
+          </div>
+          <div className="main-description main-description-mobile">
+            <p className="main-paragraph main-paragraph-mobile">Shiba Run is a P2E digital dog racing game where players own, race, and breed NFT Shibas!</p>
+            {/* <button className="primary-btn primary-btn-mobile">MINT SOON!</button> */}
+          </div>
+        </div>
+        <div className="main-content-wrapper">
+          <img src={Test} alt="Image of three shibas" />
+        </div>
+      </div>
       }
       {width > 1024 ? 
         <div id="features" className="features-container">
