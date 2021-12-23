@@ -48,12 +48,12 @@ function App() {
             <Link className="header-item" activeClass="active" to="team" spy={true} smooth={true} offset={-100} duration={500}>Team</Link>
             <a href="https://discord.gg/shibarun"><img className="header-item header-social-btn" src={DiscordLogo} alt="Discord Btn" /></a>
             <a href="https://twitter.com/ShibaRunProject"><img className="header-item header-social-btn" src={TwitterLogo} alt="Twitter Btn" /></a>
-            <a className="header-item whitepaper-btn" href="https://yubiny16.gitbook.io/shiba-run-whitepaper/">Whitepaper</a>
+            <a className="header-item whitepaper-btn" href="https://shiba-run.gitbook.io/shiba-run-whitepaper/">Whitepaper</a>
           </div> :
           <div className="header-links">
             <img className="header-item header-item-mobile header-social-btn" src={DiscordLogo} alt="Discord Btn" />
             <img className="header-item header-item-mobile header-social-btn" src={TwitterLogo} alt="Twitter Btn" />
-            <a className="whitepaper-btn header-item header-item-mobile  whitepaper-btn-mobile" href="https://yubiny16.gitbook.io/shiba-run-whitepaper/">Whitepaper</a>
+            <a className="whitepaper-btn header-item header-item-mobile  whitepaper-btn-mobile" href="https://shiba-run.gitbook.io/shiba-run-whitepaper/">Whitepaper</a>
           </div>
         }
       </div>
