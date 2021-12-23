@@ -159,10 +159,10 @@ function App() {
           <img src={LargeLogo} alt="Shiba Run Logo" />
         </div>
         <div className="community-links-wrapper">
-          <a href="https://discord.com/" target="_blank" className="community-link">
+          <a href="https://discord.gg/shibarun" target="_blank" className="community-link">
             <img src={DiscordLogo} alt="Shiba Run Logo" />
           </a>
-          <a href="https://twitter.com/" target="_blank" className="community-link">
+          <a href="https://twitter.com/ShibaRunProject" target="_blank" className="community-link">
             <img src={TwitterLogo} alt="Shiba Run Logo" />
           </a>
         </div>
