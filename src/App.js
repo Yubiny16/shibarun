@@ -68,7 +68,7 @@ function App() {
             <div className="welcome-descriptions">
               <h2 className="welcome-section-title">WELCOME!</h2>
               <p className="welcome-paragraph">
-              Shiba Run is a P2E digital dog racing game where players own, race, and breed NFT Shibas!
+                Shiba Run is a P2E digital dog racing game on Solana Network where players own, race, and breed NFT Shibas!
               </p> 
               <button className="primary-btn">MINT SOON!</button>
               <div className="welcome-solana"><img src={Solana} /></div>
@@ -77,17 +77,17 @@ function App() {
         </div> : 
         <div id="welcome" className="welcome-container welcome-scrolling-image-container">
           <div className="welcome-scrolling-image welcome-scrolling-image-mobile"></div>
-          <div className="welcome-content-wrapper">
-            <div  className="welcome-image-wrapper ">
+          <div className="welcome-content-wrapper welcome-content-wrapper-mobile">
+            {/* <div  className="welcome-image-wrapper ">
               <img src={ShibaTrio} alt="Image of three shibas" />
-            </div>
-            <div className="welcome-descriptions">
+            </div> */}
+            <div className="welcome-descriptions welcome-descriptions-mobile">
               <h2 className="welcome-section-title welcome-section-title-mobile">WELCOME!</h2>
               <p className="welcome-paragraph welcome-paragraph-mobile">
-                Shiba Run is a P2E digital dog racing game where players own, race, and breed NFT Shibas!
+                Shiba Run is a P2E digital dog racing game on Solana Network where players own, race, and breed NFT Shibas!
               </p> 
               <button className="primary-btn primary-btn-mobile">MINT SOON!</button>
-              <div className="welcome-solana"><img src={Solana} /></div>
+              {/* <div className="welcome-solana welcome-solana-mobile"><img src={Solana} className="welcome-solana-logo" /></div> */}
             </div>
           </div>
         </div>
