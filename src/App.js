@@ -37,7 +37,7 @@ function App() {
   return (
     <div className="app">
       <div className="header">
-        <Link className="header-logo" activeClass="active" to="main" spy={true} smooth={true}
+        <Link className="header-logo" activeClass="active" to="welcome" spy={true} smooth={true}
           offset={-100} duration={500}><img src={LargeLogo} alt="Shiba Run Logo"/>
         </Link>
         {width > 1024 ?
@@ -75,7 +75,7 @@ function App() {
             </div> 
           </div>  
         </div> : 
-        <div id="welcome" className="welcome-container welcome-scrolling-image-container">
+        <div id="welcome" className="welcome-container welcome-container-mobile welcome-scrolling-image-container">
           <div className="welcome-scrolling-image welcome-scrolling-image-mobile"></div>
           <div className="welcome-content-wrapper welcome-content-wrapper-mobile">
             {/* <div  className="welcome-image-wrapper ">

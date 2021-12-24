@@ -30,8 +30,9 @@
 }
 
 .primary-btn-mobile {
-  height: 50%;
-  font-size: 6px;
+  height: 40px;
+  width: 40%;
+  font-size: 15px;
 }
 
 .app {
@@ -50,7 +51,6 @@
   justify-content: space-between;
   align-items: center;
   background-color: #7a3a33;
-  margin-bottom: 40px;
   position: sticky;
   top: 0;
   z-index: 10;
@@ -73,6 +73,7 @@
 }
 
 .header-item {
+  cursor: pointer;
   align-self: center;
   font-family: montserrat;
   color: white;
@@ -190,10 +191,12 @@
   width: 100%;
   margin-bottom: 200px;
   line-height: 115%;
+  /* margin-top: 60px; */
 }
 
 .welcome-container-mobile {
   margin-bottom: 50px;
+  height: 500px;
 }
 
 .welcome-scrolling-image-container {
@@ -216,6 +219,7 @@
 
 .welcome-scrolling-image-mobile {
   top: 0px;
+  width: 700%;
   height: 100%;
 }
 
@@ -229,6 +233,7 @@
 
 .welcome-content-wrapper-mobile {
   justify-content: center;
+  align-items: center;
 }
 
 .welcome-image-wrapper {
@@ -239,15 +244,12 @@
 .welcome-descriptions {
   width: 40%;
   color: white;
-  margin-right: 50px;
-  margin-left: 50px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .welcome-descriptions-mobile {
-  margin-right: 0px;
-  margin-left: 0px;
-  justify-content: center;
-  align-items: center;
+  width: 80%;
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -262,8 +264,8 @@
 
 .welcome-section-title-mobile {
   margin-top: 0px;
-  margin-bottom: 10px;
-  font-size: 15px;
+  margin-bottom: 25px;
+  font-size: 40px;
   color: white;
 }
 
@@ -274,7 +276,8 @@
 }
 
 .welcome-paragraph-mobile {
-  font-size: 8px;
+  line-height: 140%;
+  font-size: 15px;
 }
 
 .welcome-solana {
