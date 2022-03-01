@@ -174,13 +174,13 @@ function App() {
               />
               <StadiumCard style={{ padding: 50, backgroundColor: '#FFF8EE', 
                 boxShadow: "1px 3px 1px #C4C4C4", width: 250, height: 300, borderRadius: 20, textAlign: 'left' }}
-                number={'01'}
+                number={'02'}
                 title={'Properties'}
                 description={'Each stadium has properties like location,terrain type, distance, and number of lanes.'}
               />
               <StadiumCard style={{ padding: 50, backgroundColor: '#FFF8EE', 
                 boxShadow: "1px 3px 1px #C4C4C4", width: 250, height: 300, borderRadius: 20, textAlign: 'left' }}
-                number={'01'}
+                number={'03'}
                 title={'Shiba Racing'}
                 description={'The racing algorithm is based on specific attributes of NFT Shibas and the Stadium as well as the interplay between the players to make the races fair, unpredictable and dynamic.'}
               />
