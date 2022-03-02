@@ -383,13 +383,13 @@ function App() {
               image={shiba01} 
               name={'WHY.BE'} 
               title={'Project Manager'} 
-              description={'Graduated from Yale University, Why.be is a serial entrepreneur with strong technical background and work experience in both BD and Product. Why.be is the project manager for Shiba Run.'} 
+              description={'Why.be is a serial entrepreneur with strong technical background and work experience in both BD and Product. Why.be is the project manager for Shiba Run.'} 
             />
             <TeamCard 
               image={shiba02} 
               name={'HARURU'} 
               title={'Blockchain Specialist'} 
-              description={'Graduated from Stanford University, Haruru has been a crypto-enthusiast / on-chain analyst since 2017. Haruru is in charge of the tokenomics andthe launch of the $Bark token.'} 
+              description={'Haruru has been a crypto-enthusiast / on-chain analyst since 2017. Haruru is in charge of the tokenomics andthe launch of the $Bark token.'} 
             />
             <TeamCard 
               image={shiba03} 
@@ -407,7 +407,7 @@ function App() {
               image={shiba05} 
               name={'JAYPEE'} 
               title={'Software Developer'} 
-              description={'Graduated from Stanford with B.S in Computer Science andM.S in Statistics in 2017. Jaypee had worked at LinkedIn as a software developer until joining the Shiba Run Team as the head software developer.'} 
+              description={'Jaypee had worked at LinkedIn as a software developer until joining the Shiba Run Team as the head software developer.'} 
             />
           </div>
         </div>
